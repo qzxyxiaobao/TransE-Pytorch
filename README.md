@@ -10,6 +10,6 @@ Test results with default parameter:
       |  Mean Rank  |  Filter@10  |
       |  tensor(276.4282, device='cuda:0')  |  0.171166900848  |
 
-A better performance can be achieved by tunning the parameters.
+Better performance can be achieved by tunning the parameters.
 
 [1] Bordes A, Usunier N, Garcia-Duran A, et al. Translating embeddings for modeling multi-relational data[C]//Advances in neural information processing systems. 2013: 2787-2795.
