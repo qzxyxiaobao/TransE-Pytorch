@@ -197,10 +197,10 @@ class trainTransE:
                     self.trainTriple.to(self.device), self.numOfTestTriple)
         print "-----Result of Link Prediction (Raw)-----"
         print "|  Mean Rank  |  Filter@" + str(self.top) + "  |"
-        print "      |  " + str(meanRank[0]) + "  |  under implementing  |"
+        print "|  " + str(meanRank[0]) + "  |  under implementing  |"
         print "-----Result of Link Prediction (Filter)-----"
         print "|  Mean Rank  |  Filter@" + str(self.top) + "  |"
-        print "      |  " + str(meanRank[1]) + "  |  under implementing  |"
+        print "|  " + str(meanRank[1]) + "  |  under implementing  |"
         print "-----Fast Test Ended at " + time.strftime('%m-%d-%Y %H:%M:%S', time.localtime(time.time())) + "-----"
 
     def test(self, transE):
@@ -222,10 +222,10 @@ class trainTransE:
                 fHit += 1
         print "-----Result of Link Prediction (Raw)-----"
         print "|  Mean Rank  |  Filter@" + str(self.top) + "  |"
-        print "      |  " + str(rMR/self.numOfTestTriple) + "  |  " + str(rHit/self.numOfTestTriple) + "  |"
+        print "|  " + str(rMR/self.numOfTestTriple) + "  |  " + str(rHit/self.numOfTestTriple) + "  |"
         print "-----Result of Link Prediction (Filter)-----"
         print "|  Mean Rank  |  Filter@" + str(self.top) + "  |"
-        print "      |  " + str(fMR/self.numOfTestTriple) + "  |  " + str(fHit/self.numOfTestTriple) + "  |"
+        print "|  " + str(fMR/self.numOfTestTriple) + "  |  " + str(fHit/self.numOfTestTriple) + "  |"
         print "-----Test Ended at " + time.strftime('%m-%d-%Y %H:%M:%S', time.localtime(time.time())) + "-----"
 
     def write(self):
